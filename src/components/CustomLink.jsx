@@ -6,8 +6,7 @@ export default function CustomLink({ to, text }) {
     return (
         <Link
             to={to}
-            className={`${url.pathname === to ? "border-b-4 border-radius border-blue-400" : ""}
-                        pb-1`}
+            className={`${url.pathname === to ? "border-b-4 border-radius border-blue-500" : ""}`}
         >{text}</Link>
     );
 }
