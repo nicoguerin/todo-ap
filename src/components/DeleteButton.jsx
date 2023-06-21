@@ -1,4 +1,6 @@
 import { useLocation } from "react-router-dom";
+import trashIcon from '../icons/trash.svg';
+
 export default function DeleteButton({ onClick, text }) {
     const url = useLocation();
 
@@ -10,7 +12,7 @@ export default function DeleteButton({ onClick, text }) {
                         p-2 rounded-lg`}
         >
             <img
-                src="../../public/trash.svg"
+                src={trashIcon}
                 alt="Trash icon"
                 className="w-7"
             />
